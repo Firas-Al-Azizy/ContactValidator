@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact">
+        <div class="title">
+          <h1>contact us</h1>
+        </div>
+        <div class="contact-form">
+          <div class="input-fields">
+            <form name="contact" action="#" onsubmit="required()">
+            <input type="text" name="name" class="input" placeholder="Name">
+            <input type="email" name="email" class="input" placeholder="Email Address">
+            <input type="number" name="phone" class="input" placeholder="Phone">
+            <input type="number" name="age" class="input" placeholder="Age">
+          </div>
+          <div class="msg">
+            <textarea name="msg" placeholder="Message"></textarea>
+            <div ><input class="btn" type="submit" name="submit" value="Send" onclick="alpha(document.contact.name),num(document.contact.age),len(document.contact.msg),emailv(document.contact.email),pho(document.contact.phone)"/></div>
+            
+          </div>
+            </form>
+        </div>
+      </div>
+    <script src="./script.js"></script>
+</body>
+</html>
